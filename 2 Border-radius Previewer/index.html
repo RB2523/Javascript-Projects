@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-radius Previewer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    
+
+    <section>
+
+        <h1>Border-radius Previewer</h1>
+
+        <div class="mainContainer"  >
+            
+            <div class="container">
+                <div onclick="changeBorderRadius(this ,0 )" class="subContainer" > 
+                    <span> border-radius:</span> 
+                    <span> 0%</span> 
+                </div>
+                <div onclick="changeBorderRadius(this , 0)" class="subContainer" > 
+                    <span> border-radius:</span> 
+                    <span> 25%</span> 
+                </div>
+                <div onclick="changeBorderRadius(this , 0)" class="subContainer" > 
+                    <span> border-radius:</span> 
+                    <span> 50%</span> 
+                </div>
+
+                <div onclick="changeBorderRadius(this , 0)" class="subContainer" > 
+                    <span> border-radius:</span> 
+                    <span> 50% 10% </span> 
+                </div>
+
+                <div onclick="changeBorderRadius(this , 0)" class="subContainer" > 
+                    <span> border-radius:</span> 
+                    <span> 50% 40% 20% </span> 
+                </div>
+
+                <div onclick="changeBorderRadius(this , 0)" class="subContainer" > 
+                    <span> border-radius:</span> 
+                    <span> 10% 20% 30% 40%</span> 
+                </div>
+
+                <div onclick="changeBorderRadius(this , 0)" class="subContainer" > 
+                    <span> border-radius:</span> 
+                    <span> 10% 5% 34% 2%</span> 
+                </div>
+
+                <div onclick="changeBorderRadius(this , 0)" class="subContainer" > 
+                    <span> border-radius:</span> 
+                    <span> 0% 100% 0% 100%  </span> 
+                </div>
+
+                <div class="subContainer"  onclick="changeBorderRadius( this , 1)" > 
+                    <span> border-radius: </span> 
+                    <input id="input" type="number" placeholder="enter custom border-radius" onchange="changeBorderRadiusCustom() ">
+                    <input id="input" type="number" placeholder="enter custom border-radius" onchange="changeBorderRadiusCustom() ">
+                    <input id="input" type="number" placeholder="enter custom border-radius" onchange="changeBorderRadiusCustom() ">
+                    <input id="input" type="number" placeholder="enter custom border-radius" onchange="changeBorderRadiusCustom() ">
+                </div>
+
+                <div class="subContainer" > 
+                    <button onclick="copySelectedBorderRadius()">Copy selected style</button>
+                    <span id="userMessage" class="userMessage" >Copied!</span>
+                </div>
+            </div>
+
+            <div class="box" id="target" >
+                    <div class="boxItem"> border-top-left-radius: <span id="text1">0%</span>  </div>
+                    <div class="boxItem"> border-top-right-radius: <span id="text2">0%</span>  </div>
+                    <div class="boxItem"> border-bottom-right-radius: <span id="text3">0%</span>  </div>
+                    <div class="boxItem"> border-bottom-left-radius:<span id="text4">0%</span> </div>
+            </div>
+        </div>
+    
+    </section>
+
+    
+
+
+   
+</body>
+</html>
